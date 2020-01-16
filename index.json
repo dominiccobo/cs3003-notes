@@ -1,0 +1,92 @@
+[
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-testing/white-vs-black/",
+	"title": "White vs Black Box",
+	"tags": [],
+	"description": "",
+	"content": "Do we test software understanding how it works or do we test software to see whether it does with what we expect it to do when we interact with it?\nBlack Box Black box testing implies the system as a subject is opaque. We cannot see into it.\nWhite Box White box testing, more appropriately termed transparent or translucent testing, implies we can see the internal workings of a system and are concerned with creating test subjects from the various building blocks that form it to understand whether they work correctly or not.\nFurther Reading White Box Testing\nBlack Box Testing\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/human-aspects/",
+	"title": "Human Aspects",
+	"tags": [],
+	"description": "",
+	"content": "Human Aspects "
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/clean-code/",
+	"title": "Clean Code",
+	"tags": [],
+	"description": "",
+	"content": "Clean code "
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/refactoring/",
+	"title": "Refactoring",
+	"tags": [],
+	"description": "",
+	"content": "Refactoring Lorem Ipsum.\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-testing/",
+	"title": "Software Testing",
+	"tags": [],
+	"description": "",
+	"content": "Software Testing Testing is about qualifying that our software works as expected.\nWe can never prove that software is defect free, but we can qualify that it is absence of defects we test for.\nSoftware Testing, can poorly be phrased as torturing a piece of software with eveverything we have to identify defects that we expect.\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-metrics/",
+	"title": "Software Metrics",
+	"tags": [],
+	"description": "",
+	"content": "Software Metrics "
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-evolution-and-maintenance/",
+	"title": "Software Evoltuion and Maintenance",
+	"tags": [],
+	"description": "",
+	"content": "Software Evolution and Maintenance "
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/contribution/",
+	"title": "Contributing",
+	"tags": [],
+	"description": "",
+	"content": "Why? There's bound to be some mistakes or something wrong! I rely on others pointing this out to keep the notes working.\nWho? These notes are public and for everyone's benefit, especially those in the cohort at Brunel.\n## How?\nTODO:\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "CS3003 Notes These are a communal set of notes for the Software Engineering Module (CS3003) at Brunel Univeristy London.\nThese notes are maintained by Dominic Cobo. Collaboration and contributions are more than welcome, please feel free to raise a pull-request with any changes!\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-testing/approaches/",
+	"title": "Granularity",
+	"tags": [],
+	"description": "",
+	"content": "Levels of Granularity Unit Testing These focus on testing a single part of the software in isolation; this is usually done at class level in OO programming.\nDependencies, ie. other units the class depends on have assumptions defined for them in the form of Mocks.\nclass MathOperations { private final float[] numbers; MathOperations(float[] numbers) { this.numbers = numbers; } public float getSum() { return numbers.stream().sum(); } } class MathOperationsTest { private final MathOperations fixture; private final float[] TEST_NUMBERS = new float[] {2.0, 4.0}; @Before public void setUp() { fixture = new MathOperations(TEST_NUMBERS); } @Test public void testSummation() { float result = fixture.getSum(); float expected = 6.0; assertThat(expected, is(expected)); } } Component / System Testing Focuses on testing a set of units combined together in order to produce an expected overall behaviour.\nColloquially, functional testing is synonymous in this area.\nIntegration Testing Imagine creating a software system that needs to send out emails. How do we verify that it works with our current mail server?\nOr perhaps, we rely on authentication from another server such as Facebook or Google?\nIntegration testing is all about verifying the behaviour of our software with its peers.\nAcceptance Testing At the end of the day, we create software to address users needs. Whether we formulise these needs through use-cases, Business Requirement documents or user-stories, we need a way to test that our software meets these needs.\nAcceptance testing is all about ensuring that our software meets these needs.\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/software-testing/release-testing/",
+	"title": "Release Testing",
+	"tags": [],
+	"description": "",
+	"content": "Release Testing Techniques Software testing doesn't stop when creating the software. The more eyes we have on our software the more likely we are to expose defects, making releasing software in a controlled manner an important part of testing. There are several different techniques.\nSmoke Testing How do we ensure the vital features of the application are working when it is released?\nHow do we know when the application is starting to burn? When an electronic appliance goes wrong, smoke is generally a good indicator of something bad.\nWe aim to mimic this in Software Engineering by testing a piece of Software for its vitals.\nAlpha-Beta Testing A/B Releases Most of what companies do when they want to deliver a new product is theorising over what a consumer may want. Often, they may deliver samples to a market and measure which one performs better.\nIn SE, this is known as A/B testing.\nCanary Releases When mining was rife in the world, a canary used to be taken down into the mines to check for issues with air quality. The small lungs of the bird would mean it would be the first fatality in the event of a problem. Miners understood that when they no longer heard any chirping, they had to get out.\nLearning from this, we can release a small piece of Software to customers to see whether it survives or dies.\nBlue Green Releases Is a technique of keeping a new version of an application running next to the old one, but using routing techniques to point the consumer to the new application when it is ready.\nThat way if the new application isn't quite ready or fails, the routes can simply be changed back to the old application.\nNotes on Environments Development\nStaging\nProduction\n"
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://dominiccobo.github.io/cs3003-notes/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

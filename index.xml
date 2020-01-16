@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GCS Docs</title>
+    <link>https://dominiccobo.github.io/cs3003-notes/</link>
+    <description>Recent content on GCS Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 16 Jan 2020 12:35:30 +0000</lastBuildDate>
+    
+	<atom:link href="https://dominiccobo.github.io/cs3003-notes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>White vs Black Box</title>
+      <link>https://dominiccobo.github.io/cs3003-notes/software-testing/white-vs-black/</link>
+      <pubDate>Thu, 16 Jan 2020 12:34:55 +0000</pubDate>
+      
+      <guid>https://dominiccobo.github.io/cs3003-notes/software-testing/white-vs-black/</guid>
+      <description>Do we test software understanding how it works or do we test software to see whether it does with what we expect it to do when we interact with it?
+Black Box Black box testing implies the system as a subject is opaque. We cannot see into it.
+White Box White box testing, more appropriately termed transparent or translucent testing, implies we can see the internal workings of a system and are concerned with creating test subjects from the various building blocks that form it to understand whether they work correctly or not.</description>
+    </item>
+    
+    <item>
+      <title>Granularity</title>
+      <link>https://dominiccobo.github.io/cs3003-notes/software-testing/approaches/</link>
+      <pubDate>Thu, 16 Jan 2020 12:35:30 +0000</pubDate>
+      
+      <guid>https://dominiccobo.github.io/cs3003-notes/software-testing/approaches/</guid>
+      <description>Levels of Granularity Unit Testing These focus on testing a single part of the software in isolation; this is usually done at class level in OO programming.
+Dependencies, ie. other units the class depends on have assumptions defined for them in the form of Mocks.
+class MathOperations { private final float[] numbers; MathOperations(float[] numbers) { this.numbers = numbers; } public float getSum() { return numbers.stream().sum(); } } class MathOperationsTest { private final MathOperations fixture; private final float[] TEST_NUMBERS = new float[] {2.</description>
+    </item>
+    
+    <item>
+      <title>Release Testing</title>
+      <link>https://dominiccobo.github.io/cs3003-notes/software-testing/release-testing/</link>
+      <pubDate>Thu, 16 Jan 2020 12:35:30 +0000</pubDate>
+      
+      <guid>https://dominiccobo.github.io/cs3003-notes/software-testing/release-testing/</guid>
+      <description>Release Testing Techniques Software testing doesn&#39;t stop when creating the software. The more eyes we have on our software the more likely we are to expose defects, making releasing software in a controlled manner an important part of testing. There are several different techniques.
+Smoke Testing How do we ensure the vital features of the application are working when it is released?
+How do we know when the application is starting to burn?</description>
+    </item>
+    
+  </channel>
+</rss>

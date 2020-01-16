@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-testing/white-vs-black/</loc>
+    <lastmod>2020-01-16T12:34:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/human-aspects/</loc>
+    <lastmod>2020-01-16T12:29:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/clean-code/</loc>
+    <lastmod>2020-01-16T12:29:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/refactoring/</loc>
+    <lastmod>2020-01-16T12:29:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-testing/</loc>
+    <lastmod>2020-01-16T12:29:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-metrics/</loc>
+    <lastmod>2020-01-16T12:28:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-evolution-and-maintenance/</loc>
+    <lastmod>2020-01-16T12:23:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/contribution/</loc>
+    <lastmod>2020-01-16T12:28:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/</loc>
+    <lastmod>2020-01-16T12:35:30+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-testing/approaches/</loc>
+    <lastmod>2020-01-16T12:35:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/software-testing/release-testing/</loc>
+    <lastmod>2020-01-16T12:35:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://dominiccobo.github.io/cs3003-notes/tags/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Aspects on GCS Docs</title>
+    <link>https://dominiccobo.github.io/cs3003-notes/human-aspects/</link>
+    <description>Recent content in Human Aspects on GCS Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 16 Jan 2020 12:29:52 +0000</lastBuildDate>
+    
+	<atom:link href="https://dominiccobo.github.io/cs3003-notes/human-aspects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

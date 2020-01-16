@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.62.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/cs3003-notes/images/favicon.png" type="image/png">
+
+    <title>Software Evoltuion and Maintenance :: GCS Docs</title>
+
+    
+    <link href="/cs3003-notes/css/nucleus.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/fontawesome-all.min.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/hybrid.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/featherlight.min.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/perfect-scrollbar.min.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/auto-complete.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/atom-one-dark-reasonable.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/theme.css?1579185855" rel="stylesheet">
+    <link href="/cs3003-notes/css/hugo-theme.css?1579185855" rel="stylesheet">
+    
+      <link href="/cs3003-notes/css/theme-blue.css?1579185855" rel="stylesheet">
+    
+
+    <script src="/cs3003-notes/js/jquery-3.3.1.min.js?1579185855"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/cs3003-notes/software-evolution-and-maintenance/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="/">
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/cs3003-notes/js/lunr.min.js?1579185855"></script>
+<script type="text/javascript" src="/cs3003-notes/js/auto-complete.js?1579185855"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/dominiccobo.github.io\/cs3003-notes\/";
+    
+</script>
+<script type="text/javascript" src="/cs3003-notes/js/search.js?1579185855"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/human-aspects/" title="Human Aspects" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/human-aspects/">
+          Human Aspects
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/clean-code/" title="Clean Code" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/clean-code/">
+          Clean Code
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/refactoring/" title="Refactoring" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/refactoring/">
+          Refactoring
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/software-testing/" title="Software Testing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/software-testing/">
+          Software Testing
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cs3003-notes/software-testing/white-vs-black/" title="White vs Black Box" class="dd-item ">
+        <a href="/cs3003-notes/software-testing/white-vs-black/">
+        White vs Black Box
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cs3003-notes/software-testing/approaches/" title="Granularity" class="dd-item ">
+        <a href="/cs3003-notes/software-testing/approaches/">
+        Granularity
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/cs3003-notes/software-testing/release-testing/" title="Release Testing" class="dd-item ">
+        <a href="/cs3003-notes/software-testing/release-testing/">
+        Release Testing
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/software-metrics/" title="Software Metrics" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/software-metrics/">
+          Software Metrics
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/software-evolution-and-maintenance/" title="Software Evoltuion and Maintenance" class="dd-item 
+        parent
+        active
+        
+        ">
+      <a href="/cs3003-notes/software-evolution-and-maintenance/">
+          Software Evoltuion and Maintenance
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/cs3003-notes/contribution/" title="Contributing" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/cs3003-notes/contribution/">
+          Contributing
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/dominiccobo/cs3003-notes/edit/master/content/software-evolution-and-maintenance/_index.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            <a href='/cs3003-notes/'></a> > Software Evoltuion and Maintenance
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+          <div id="chapter">
+        
+        <div id="body-inner">
+          
+
+        
+
+
+
+
+	<h1 id="software-evolution-and-maintenance">Software Evolution and Maintenance</h1>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+            </div> 
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/cs3003-notes/software-metrics/" title="Software Metrics"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/cs3003-notes/contribution/" title="Contributing" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/cs3003-notes/js/clipboard.min.js?1579185855"></script>
+    <script src="/cs3003-notes/js/perfect-scrollbar.min.js?1579185855"></script>
+    <script src="/cs3003-notes/js/perfect-scrollbar.jquery.min.js?1579185855"></script>
+    <script src="/cs3003-notes/js/jquery.sticky.js?1579185855"></script>
+    <script src="/cs3003-notes/js/featherlight.min.js?1579185855"></script>
+    <script src="/cs3003-notes/js/highlight.pack.js?1579185855"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/cs3003-notes/js/modernizr.custom-3.6.0.js?1579185855"></script>
+    <script src="/cs3003-notes/js/learn.js?1579185855"></script>
+    <script src="/cs3003-notes/js/hugo-learn.js?1579185855"></script>
+
+    <link href="/cs3003-notes/mermaid/mermaid.css?1579185855" rel="stylesheet" />
+    <script src="/cs3003-notes/mermaid/mermaid.js?1579185855"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>

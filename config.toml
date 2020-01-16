@@ -1,0 +1,13 @@
+baseURL = "https://dominiccobo.github.io/cs3003-notes/"
+languageCode = "en-GB"
+title = "GCS Docs"
+theme = "hugo-theme-learn"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+themeVariant = "blue"
+
+editURL = "https://github.com/dominiccobo/cs3003-notes/edit/master/content/"
